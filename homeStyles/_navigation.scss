@@ -1,0 +1,104 @@
+.navigation {
+  background-color: #02001b;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0.5rem;
+    .logo {
+      img {
+        width: 140px;
+        @media screen and (min-width: 920px) {
+          width: 200px;
+        }
+      }
+    }
+
+    .icon_menu {
+      cursor: pointer;
+      @media screen and (min-width: 920px) {
+        display: none;
+      }
+      span {
+        display: block;
+        width: 30px;
+        height: 1px;
+        background-color: white;
+      }
+      span:nth-child(2) {
+        margin: 0.4rem 0;
+        width: 20px;
+      }
+    }
+    .links_container {
+      font-family: "Lato", sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 53%;
+      transition: 1s ease-in-out;
+      @media screen and (max-width: 920px) {
+        position: absolute;
+        z-index: 10;
+        background-color: #ab8d69;
+        top: 4.28rem;
+        left: 0;
+        height: 80%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 3rem 0;
+        transform: translateX(-100rem);
+      }
+      .links {
+        @media screen and (max-width: 920px) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+          width: 100%;
+        }
+
+        a {
+          color: white;
+          font-weight: 300;
+          margin: 0 0.6rem;
+          transition: 0.3s ease-in-out;
+          @media screen and (max-width: 920px) {
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 1.2rem 0;
+            width: 100%;
+          }
+          @media screen and (min-width: 920px) {
+            &:hover {
+              color: #ab8d69;
+            }
+          }
+        }
+      }
+      .cta_btn {
+        button {
+          width: 200px;
+          padding: 0.5rem 0;
+          background: transparent;
+          color: white;
+          border: 1px solid white;
+          font-family: "PT Serif", serif;
+          font-size: 1rem;
+          letter-spacing: 2px;
+          @media screen and (min-width: 920px) {
+            &:hover {
+              background-color: #ab8d69;
+              border-color: #ab8d69;
+            }
+          }
+        }
+      }
+    }
+    .links_container.active {
+      transform: translateX(0);
+    }
+  }
+}

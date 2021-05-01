@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 93%;
+  margin: auto;
+  font-family: karla, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.navigation {
+  background-color: #02001b;
+}
+
+.navigation .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0.5rem;
+}
+
+.navigation .container .logo img {
+  width: 140px;
+}
+
+@media screen and (min-width: 920px) {
+  .navigation .container .logo img {
+    width: 200px;
+  }
+}
+
+.navigation .container .icon_menu {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 920px) {
+  .navigation .container .icon_menu {
+    display: none;
+  }
+}
+
+.navigation .container .icon_menu span {
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: white;
+}
+
+.navigation .container .icon_menu span:nth-child(2) {
+  margin: 0.4rem 0;
+  width: 20px;
+}
+
+.navigation .container .links_container {
+  font-family: "Lato", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 53%;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+@media screen and (max-width: 920px) {
+  .navigation .container .links_container {
+    position: absolute;
+    z-index: 10;
+    background-color: #ab8d69;
+    top: 4.28rem;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 3rem 0;
+    -webkit-transform: translateX(-100rem);
+            transform: translateX(-100rem);
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .navigation .container .links_container .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.navigation .container .links_container .links a {
+  color: white;
+  font-weight: 300;
+  margin: 0 0.6rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 920px) {
+  .navigation .container .links_container .links a {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1.2rem 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .navigation .container .links_container .links a:hover {
+    color: #ab8d69;
+  }
+}
+
+.navigation .container .links_container .cta_btn button {
+  width: 200px;
+  padding: 0.5rem 0;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  font-family: "PT Serif", serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 920px) {
+  .navigation .container .links_container .cta_btn button:hover {
+    background-color: #ab8d69;
+    border-color: #ab8d69;
+  }
+}
+
+.navigation .container .links_container.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.hero {
+  background-color: #02001b;
+  height: 100vh;
+  padding: 2rem 0;
+}
+
+.hero .container {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 920px) {
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2rem 3rem;
+  }
+}
+
+.hero .container .hero_content {
+  color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 920px) {
+  .hero .container .hero_content {
+    width: 40%;
+    text-align: left;
+  }
+}
+
+.hero .container .hero_content h1 {
+  font-family: "PT Serif", serif;
+}
+
+@media screen and (min-width: 920px) {
+  .hero .container .hero_content h1 {
+    font-size: 3rem;
+  }
+}
+
+.hero .container .hero_content p {
+  font-family: "Lato", sans-serif;
+  margin: 1rem 0;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.hero .container .hero_content button {
+  font-family: "PT Serif", serif;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  background-color: #ab8d69;
+  color: white;
+  margin-top: 1rem;
+}
+
+.hero .container .hero_burger {
+  position: relative;
+  margin-top: 1rem;
+  height: 200px;
+}
+
+@media screen and (min-width: 920px) {
+  .hero .container .hero_burger {
+    width: 60%;
+  }
+}
+
+.hero .container .hero_burger img {
+  width: 100%;
+}
+
+.hero .container .hero_burger .salt_img {
+  position: absolute;
+  width: 70%;
+  right: 2rem;
+}
+
+.hero .container .hero_burger .pepper_img {
+  position: absolute;
+  width: 40%;
+  top: 5rem;
+}
+
+.hero .container .hero_burger .burger_imgs {
+  width: 55%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.hero .container .hero_burger .burger_imgs img {
+  position: absolute;
+}
+
+.hero .container .hero_burger .burger_imgs .top_bun {
+  top: 2rem;
+  z-index: 4;
+}
+
+.hero .container .hero_burger .burger_imgs .onion {
+  bottom: 5rem;
+}
+
+.hero .container .hero_burger .burger_imgs .tomato {
+  bottom: 4.4rem;
+  z-index: 4;
+}
+
+.hero .container .hero_burger .burger_imgs .pickel {
+  bottom: 3.5rem;
+}
+
+.hero .container .hero_burger .burger_imgs .meat {
+  bottom: 1.5rem;
+}
+
+.hero .container .hero_burger .burger_imgs .bottom_bun {
+  bottom: 0;
+  z-index: 4;
+}
+/*# sourceMappingURL=home.css.map */
