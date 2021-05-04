@@ -6,13 +6,15 @@
     margin-top: 2rem;
     @media screen and (min-width: 920px) {
       display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
       padding: 2rem 3rem;
     }
     .hero_content {
       color: white;
       text-align: center;
       @media screen and (min-width: 920px) {
-        width: 40%;
+        width: 45%;
         text-align: left;
       }
       h1 {
@@ -38,10 +40,12 @@
     }
     .hero_burger {
       position: relative;
-      margin-top: 1rem;
+      margin-top: 2rem;
       height: 200px;
       @media screen and (min-width: 920px) {
-        width: 60%;
+        width: 40%;
+        height: 400px;
+        margin-right: 3rem;
       }
       img {
         width: 100%;
@@ -50,40 +54,78 @@
         position: absolute;
         width: 70%;
         right: 2rem;
+        @media screen and (min-width: 920px) {
+          right: -5rem;
+          top: 5rem;
+        }
       }
       .pepper_img {
         position: absolute;
         width: 40%;
         top: 5rem;
+        @media screen and (min-width: 920px) {
+          width: 55%;
+          top: 8rem;
+          right: 22rem;
+        }
       }
       .burger_imgs {
         width: 55%;
         height: 100%;
         margin: auto;
         position: relative;
+        @media screen and (min-width: 920px) {
+          width: 100%;
+        }
         img {
           position: absolute;
         }
         .top_bun {
-          top: 2rem;
+          top: 0.7rem;
           z-index: 4;
+          @media screen and (min-width: 920px) {
+            top: .5rem;
+          }
         }
         .onion {
-          bottom: 5rem;
+          top: 3.4rem;
+          left: -0.5rem;
+          z-index: 5;
+          @media screen and (min-width: 920px) {
+            z-index: 11;
+            top: 6rem;
+            width: 102%;
+          }
         }
         .tomato {
           bottom: 4.4rem;
-          z-index: 4;
+          z-index: 5;
+          @media screen and (min-width: 920px) {
+            width: 90%;
+            z-index: 14;
+            top: 8rem;
+            left: 3rem;
+          }
         }
         .pickel {
           bottom: 3.5rem;
+          z-index: 4;
+          @media screen and (min-width: 920px) {
+            bottom: 8.5rem;
+          }
         }
         .meat {
-          bottom: 1.5rem;
+          bottom: 1.99rem;
+          @media screen and (min-width: 920px) {
+            bottom: 3.5rem;
+          }
         }
         .bottom_bun {
           bottom: 0;
           z-index: 4;
+          @media screen and (min-width: 920px) {
+            bottom: 0rem;
+          }
         }
       }
     }
