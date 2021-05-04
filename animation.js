@@ -13,3 +13,14 @@ gsap
   .to(".bottom_bun", { yPercent: 40 }, 0)
   .to(".pepper_img", { yPercent: -10 }, 0)
   .to(".salt_img", { yPercent: -40 }, 0);
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".about_us",
+      start: "top top",
+      end: "top center",
+      scrub: true,
+    },
+  })
+  .to(".salt_img", { yPercent: -30 }, 0);

@@ -1,0 +1,27 @@
+.menu {
+  .wrapper {
+    padding: 3rem 0;
+    .menu_header {
+      color: white;
+      text-align: center;
+      h2 {
+        color: #ab8d69;
+        font-family: "Great Vibes", cursive;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+      h3 {
+        font-family: "PT Serif", serif;
+        margin: 1rem 0;
+        font-size: 1.8rem;
+      }
+      p {
+        font-family: "Lato", sans-serif;
+        line-height: 1.5;
+        margin: 2rem 0;
+        font-weight: normal;
+      }
+    }
+  }
+}

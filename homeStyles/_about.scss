@@ -1,12 +1,13 @@
 .about_us {
-  background-color: #02001b;
+
   .wrapper {
-    background-color: #02001b;
+   
     padding: 2rem 0;
     position: relative;
     @media screen and (min-width: 920px) {
       display: flex;
       align-items: flex-start;
+      padding: 5rem 0;
     }
     .salt_img {
       width: 400px;
@@ -16,9 +17,10 @@
       background-position: center;
       background-size: cover;
       position: absolute;
-      top: -7rem;
+      transition: 0.7s ease-in-out;
+      top: -5rem;
       left: -5rem;
-      @media screen and (max-width: 420px) {
+      @media screen and (max-width: 520px) {
         display: none;
       }
     }
