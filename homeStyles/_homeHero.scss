@@ -79,12 +79,13 @@
         }
         img {
           position: absolute;
+          transition: 0.8s ease-in-out;
         }
         .top_bun {
           top: 0.7rem;
           z-index: 4;
           @media screen and (min-width: 920px) {
-            top: .5rem;
+            top: 0.5rem;
           }
         }
         .onion {

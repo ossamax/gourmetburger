@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  height: 200vh;
+}
+
 .container {
   width: 93%;
   margin: auto;
@@ -311,6 +315,8 @@ button {
 
 .hero .container .hero_burger .burger_imgs img {
   position: absolute;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 
 .hero .container .hero_burger .burger_imgs .top_bun {
@@ -320,7 +326,7 @@ button {
 
 @media screen and (min-width: 920px) {
   .hero .container .hero_burger .burger_imgs .top_bun {
-    top: .5rem;
+    top: 0.5rem;
   }
 }
 
