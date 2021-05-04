@@ -1,0 +1,81 @@
+.about_us {
+  background-color: #02001b;
+  .wrapper {
+    background-color: #02001b;
+    padding: 2rem 0;
+    position: relative;
+    @media screen and (min-width: 920px) {
+      display: flex;
+      align-items: flex-start;
+    }
+    .salt_img {
+      width: 400px;
+      height: 200px;
+      background-image: url("../images/scattered_salt.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      top: -7rem;
+      left: -5rem;
+      @media screen and (max-width: 420px) {
+        display: none;
+      }
+    }
+    .chef_img {
+      width: 95%;
+      height: 230px;
+      margin: auto;
+      background-image: url("../images/chef.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      bottom: -1rem;
+      @media screen and (min-width: 920px) {
+        width: 50%;
+        top: -4rem;
+        left: 2rem;
+        height: 350px;
+      }
+    }
+    .about_us_content {
+      background-color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      @media screen and (min-width: 920px) {
+        text-align: left;
+        padding: 3rem 4rem 6rem;
+        width: 60%;
+      }
+      .learn_more {
+        font-family: "Great Vibes", cursive;
+        color: #ab8d69;
+        font-size: 1.9rem;
+      }
+      strong {
+        font-family: "PT Serif", serif;
+        font-size: 1.5rem;
+        @media screen and (min-width: 920px) {
+          font-size: 2rem;
+        }
+      }
+      P {
+        margin: 1.5rem 0;
+        font-size: 1rem;
+        color: #1a1a1a;
+        line-height: 1.5;
+        font-family: "Lato", sans-serif;
+      }
+      button {
+        color: #ab8d69;
+        font-family: "PT Serif", serif;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        &:hover {
+          transform: translateX(10px);
+        }
+      }
+    }
+  }
+}

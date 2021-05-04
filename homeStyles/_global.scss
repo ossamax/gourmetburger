@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 *,
 *::before,
 *::after {
@@ -10,12 +11,9 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  height: 200vh;
-}
 
-.container {
-  width: 93%;
+.wrapper {
+  width: 90%;
   margin: auto;
   font-family: karla, sans-serif;
 }
@@ -29,9 +27,13 @@ li {
 button {
   outline: none;
   cursor: pointer;
+  background-color: transparent;
   border: none;
   transition: 0.3s ease-in-out;
 }
 
 //font-family: 'Lato', sans-serif;
 //font-family: 'PT Serif', serif;
+
+//style headers
+//font-family: 'Great Vibes', cursive;

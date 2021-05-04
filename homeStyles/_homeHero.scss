@@ -2,7 +2,7 @@
   background-color: #02001b;
   height: 100vh;
   padding: 2rem 0;
-  .container {
+  .wrapper {
     margin-top: 2rem;
     @media screen and (min-width: 920px) {
       display: flex;
@@ -49,6 +49,7 @@
       }
       img {
         width: 100%;
+        transition: 0.5s ease-in-out;
       }
       .salt_img {
         position: absolute;
@@ -56,7 +57,7 @@
         right: 2rem;
         @media screen and (min-width: 920px) {
           right: -5rem;
-          top: 5rem;
+          top: 10rem;
         }
       }
       .pepper_img {
@@ -79,7 +80,7 @@
         }
         img {
           position: absolute;
-          transition: 0.8s ease-in-out;
+          transition: 0.5s ease-in-out;
         }
         .top_bun {
           top: 0.7rem;
