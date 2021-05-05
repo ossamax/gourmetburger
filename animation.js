@@ -24,3 +24,47 @@ gsap
     },
   })
   .to(".salt_img", { yPercent: -30 }, 0);
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".frises",
+      start: "top top",
+      end: "top top",
+      scrub: true,
+    },
+  })
+  .to(".frises", { rotateZ: 120 }, 0);
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".main_dish",
+      start: "top top",
+      end: "top top",
+      scrub: true,
+    },
+  })
+  .to(".main_dish", { rotateZ: 120 }, 0);
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".salade",
+      start: "top top",
+      end: "top top",
+      scrub: true,
+    },
+  })
+  .to(".salade", { rotateZ: 120 }, 0);
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".dessert",
+      start: "top top",
+      end: "top top",
+      scrub: true,
+    },
+  })
+  .to(".dessert", { rotateZ: 120 }, 0);

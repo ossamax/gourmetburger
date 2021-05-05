@@ -500,6 +500,7 @@ button {
 
 .menu .wrapper {
   padding: 3rem 0;
+  overflow: hidden;
 }
 
 .menu .wrapper .menu_header {
@@ -526,5 +527,71 @@ button {
   line-height: 1.5;
   margin: 2rem 0;
   font-weight: normal;
+}
+
+.menu .wrapper .meal {
+  width: 100%;
+  margin-top: 4rem;
+  padding: 4rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.menu .wrapper .meal .meal_salt {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -4rem;
+}
+
+.menu .wrapper .meal .dessert_salt {
+  left: -1rem;
+}
+
+.menu .wrapper .meal img {
+  width: 70%;
+  margin: 0 2rem;
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.menu .wrapper .meal .main_dish {
+  width: 80%;
+}
+
+.menu .wrapper .meal_description {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.menu .wrapper .meal_description h2 {
+  color: #ab8d69;
+  font-family: "Great Vibes", cursive;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.menu .wrapper .meal_description P {
+  color: white;
+  font-family: "Lato", sans-serif;
+  line-height: 1.8;
+}
+
+.footer {
+  height: 120vh;
 }
 /*# sourceMappingURL=home.css.map */
