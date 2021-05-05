@@ -28,7 +28,7 @@ gsap
 gsap
   .timeline({
     scrollTrigger: {
-      trigger: ".frises",
+      trigger: ".menu_header",
       start: "top top",
       end: "top top",
       scrub: true,
