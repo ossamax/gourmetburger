@@ -34,7 +34,7 @@ gsap
       scrub: true,
     },
   })
-  .to(".frises", { rotateZ: 120 }, 0);
+  .to(".frises", { rotateZ: 100 }, 0);
 
 gsap
   .timeline({
@@ -45,7 +45,7 @@ gsap
       scrub: true,
     },
   })
-  .to(".main_dish", { rotateZ: 120 }, 0);
+  .to(".main_dish", { rotateZ: 100 }, 0);
 
 gsap
   .timeline({
@@ -56,15 +56,15 @@ gsap
       scrub: true,
     },
   })
-  .to(".salade", { rotateZ: 120 }, 0);
+  .to(".salade", { rotateZ: -100 }, 0);
 
 gsap
   .timeline({
     scrollTrigger: {
-      trigger: ".dessert",
+      trigger: ".salade",
       start: "top top",
       end: "top top",
       scrub: true,
     },
   })
-  .to(".dessert", { rotateZ: 120 }, 0);
+  .to(".dessert", { rotateZ: 100 }, 0);
