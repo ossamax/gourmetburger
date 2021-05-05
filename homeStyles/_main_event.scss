@@ -1,4 +1,5 @@
-.about_us {
+.main_event {
+  margin: 4rem 0;
   .wrapper {
     padding: 2rem 0;
     position: relative;
@@ -26,7 +27,7 @@
       width: 95%;
       height: 230px;
       margin: auto;
-      background-image: url("../images/chef.jpg");
+      background-image: url("../images/events.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -39,7 +40,7 @@
         height: 350px;
       }
     }
-    .about_us_content {
+    .main_event_content {
       background-color: white;
       padding: 4rem 1rem;
       text-align: center;
@@ -48,7 +49,7 @@
         padding: 3rem 4rem 6rem;
         width: 60%;
       }
-      .learn_more {
+      .discover {
         font-family: "Great Vibes", cursive;
         color: #ab8d69;
         font-size: 1.9rem;

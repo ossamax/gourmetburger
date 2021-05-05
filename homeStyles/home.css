@@ -435,7 +435,7 @@ button {
   background-position: center;
   background-size: cover;
   position: relative;
-  bottom: -1rem;
+  bottom: -2rem;
 }
 
 @media screen and (min-width: 920px) {
@@ -449,7 +449,7 @@ button {
 
 .about_us .wrapper .about_us_content {
   background-color: white;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
@@ -498,6 +498,10 @@ button {
           transform: translateX(10px);
 }
 
+.about_us .wrapper .about_us_content button span {
+  margin-left: 0.4rem;
+}
+
 .menu .wrapper {
   padding: 3rem 0;
   overflow: hidden;
@@ -521,6 +525,12 @@ button {
   letter-spacing: 2px;
   font-size: 1.5rem;
   font-weight: normal;
+}
+
+@media screen and (min-width: 800px) {
+  .menu .wrapper .menu_header h2 {
+    font-size: 2rem;
+  }
 }
 
 .menu .wrapper .menu_header h3 {
@@ -547,7 +557,7 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 80%;
+    width: 70%;
     margin: auto;
   }
 }
@@ -600,6 +610,13 @@ button {
   margin-top: 6rem;
 }
 
+@media screen and (min-width: 800px) {
+  .menu .wrapper .meal_description {
+    text-align: left;
+    margin-top: 4rem;
+  }
+}
+
 .menu .wrapper .meal_description h2 {
   color: #ab8d69;
   font-family: "Great Vibes", cursive;
@@ -608,9 +625,139 @@ button {
   font-weight: normal;
 }
 
+@media screen and (min-width: 800px) {
+  .menu .wrapper .meal_description h2 {
+    font-size: 2rem;
+  }
+}
+
 .menu .wrapper .meal_description P {
   color: white;
   font-family: "Lato", sans-serif;
   line-height: 1.8;
+}
+
+@media screen and (min-width: 800px) {
+  .menu .wrapper .meal_description P {
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+}
+
+.main_event {
+  margin: 4rem 0;
+}
+
+.main_event .wrapper {
+  padding: 2rem 0;
+  position: relative;
+}
+
+@media screen and (min-width: 920px) {
+  .main_event .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 5rem 0;
+  }
+}
+
+.main_event .wrapper .salt_img {
+  width: 400px;
+  height: 200px;
+  background-image: url("../images/scattered_salt.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+  top: -5rem;
+  left: -5rem;
+}
+
+@media screen and (max-width: 520px) {
+  .main_event .wrapper .salt_img {
+    display: none;
+  }
+}
+
+.main_event .wrapper .chef_img {
+  width: 95%;
+  height: 230px;
+  margin: auto;
+  background-image: url("../images/events.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  bottom: -2rem;
+}
+
+@media screen and (min-width: 920px) {
+  .main_event .wrapper .chef_img {
+    width: 50%;
+    top: -4rem;
+    left: 2rem;
+    height: 350px;
+  }
+}
+
+.main_event .wrapper .main_event_content {
+  background-color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 920px) {
+  .main_event .wrapper .main_event_content {
+    text-align: left;
+    padding: 3rem 4rem 6rem;
+    width: 60%;
+  }
+}
+
+.main_event .wrapper .main_event_content .discover {
+  font-family: "Great Vibes", cursive;
+  color: #ab8d69;
+  font-size: 1.9rem;
+}
+
+.main_event .wrapper .main_event_content strong {
+  font-family: "PT Serif", serif;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 920px) {
+  .main_event .wrapper .main_event_content strong {
+    font-size: 2rem;
+  }
+}
+
+.main_event .wrapper .main_event_content P {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  color: #1a1a1a;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+}
+
+.main_event .wrapper .main_event_content button {
+  color: #ab8d69;
+  font-family: "PT Serif", serif;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.main_event .wrapper .main_event_content button:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.main_event .wrapper .main_event_content button span {
+  margin-left: 0.4rem;
 }
 /*# sourceMappingURL=home.css.map */

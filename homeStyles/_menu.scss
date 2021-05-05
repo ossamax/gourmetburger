@@ -15,6 +15,9 @@
         letter-spacing: 2px;
         font-size: 1.5rem;
         font-weight: normal;
+        @media screen and (min-width: 800px) {
+          font-size: 2rem;
+        }
       }
       h3 {
         font-family: "PT Serif", serif;
@@ -33,7 +36,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 70%;
         margin: auto;
       }
     }
@@ -69,17 +72,28 @@
     .meal_description {
       text-align: center;
       margin-top: 6rem;
+      @media screen and (min-width: 800px) {
+        text-align: left;
+        margin-top: 4rem;
+      }
       h2 {
         color: #ab8d69;
         font-family: "Great Vibes", cursive;
         font-size: 1.6rem;
         letter-spacing: 2px;
         font-weight: normal;
+        @media screen and (min-width: 800px) {
+          font-size: 2rem;
+        }
       }
       P {
         color: white;
         font-family: "Lato", sans-serif;
         line-height: 1.8;
+        @media screen and (min-width: 800px) {
+          font-size: 1.1rem;
+          font-weight: normal;
+        }
       }
     }
   }
