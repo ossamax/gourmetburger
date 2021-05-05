@@ -314,8 +314,8 @@ button {
 
 .hero .wrapper .hero_burger .burger_imgs img {
   position: absolute;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .hero .wrapper .hero_burger .burger_imgs .top_bun {
