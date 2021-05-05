@@ -40,14 +40,14 @@
         position: absolute;
         z-index: 10;
         background-color: #ab8d69;
-        top: 4.28rem;
+        top: 5rem;
         left: 0;
         height: 80%;
         width: 100%;
         flex-direction: column;
         justify-content: space-around;
         padding: 3rem 0;
-        transform: translateX(-100rem);
+        transform: translateX(100rem);
       }
       .links {
         @media screen and (max-width: 920px) {
