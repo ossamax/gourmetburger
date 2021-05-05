@@ -5,6 +5,10 @@
     .menu_header {
       color: white;
       text-align: center;
+      @media screen and (min-width: 500px) {
+        width: 50%;
+        margin: auto;
+      }
       h2 {
         color: #ab8d69;
         font-family: "Great Vibes", cursive;
@@ -22,6 +26,15 @@
         line-height: 1.5;
         margin: 2rem 0;
         font-weight: normal;
+      }
+    }
+    .meal_wrapper {
+      @media screen and (min-width: 500px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
       }
     }
     .meal {

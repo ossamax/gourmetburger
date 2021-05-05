@@ -30,7 +30,7 @@ gsap
     scrollTrigger: {
       trigger: ".menu_header",
       start: "top top",
-      end: "top top",
+      end: "bottom bottom",
       scrub: true,
     },
   })
@@ -41,7 +41,7 @@ gsap
     scrollTrigger: {
       trigger: ".main_dish",
       start: "top top",
-      end: "top top",
+      end: "center center",
       scrub: true,
     },
   })
@@ -50,9 +50,9 @@ gsap
 gsap
   .timeline({
     scrollTrigger: {
-      trigger: ".salade",
+      trigger: ".main_dish",
       start: "top top",
-      end: "top top",
+      end: "center center",
       scrub: true,
     },
   })
@@ -63,7 +63,7 @@ gsap
     scrollTrigger: {
       trigger: ".salade",
       start: "top top",
-      end: "top top",
+      end: "center center",
       scrub: true,
     },
   })

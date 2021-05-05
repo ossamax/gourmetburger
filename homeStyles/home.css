@@ -508,6 +508,13 @@ button {
   text-align: center;
 }
 
+@media screen and (min-width: 500px) {
+  .menu .wrapper .menu_header {
+    width: 50%;
+    margin: auto;
+  }
+}
+
 .menu .wrapper .menu_header h2 {
   color: #ab8d69;
   font-family: "Great Vibes", cursive;
@@ -527,6 +534,22 @@ button {
   line-height: 1.5;
   margin: 2rem 0;
   font-weight: normal;
+}
+
+@media screen and (min-width: 500px) {
+  .menu .wrapper .meal_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .menu .wrapper .meal {
