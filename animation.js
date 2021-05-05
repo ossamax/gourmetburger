@@ -40,8 +40,8 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: ".main_dish",
-      start: "top top",
-      end: "center center",
+      start: "bottom bottom",
+      end: "bottom bottom",
       scrub: true,
     },
   })
