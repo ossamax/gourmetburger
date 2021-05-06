@@ -876,7 +876,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: top top;
+  background-position: center;
 }
 
 @media screen and (min-width: 600px) {
