@@ -120,8 +120,8 @@ button {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding: 3rem 0;
-    -webkit-transform: translateX(100rem);
-            transform: translateX(100rem);
+    -webkit-transform: translateX(-100rem);
+            transform: translateX(-100rem);
   }
 }
 
