@@ -25,10 +25,11 @@
         font-size: 1.8rem;
       }
       p {
-        font-family: "Lato", sans-serif;
+        font-family: "Montserrat", sans-serif;
         line-height: 1.5;
         margin: 2rem 0;
-        font-weight: normal;
+        font-weight: 100;
+        font-size: 18px;
       }
     }
     .meal_wrapper {
@@ -36,7 +37,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 70%;
+        width: 65%;
         margin: auto;
       }
     }
@@ -64,6 +65,9 @@
         transition: 2s ease-in-out;
         transform-style: preserve-3d;
         transform: scale3d(1, 1, 1);
+        @media screen and (min-width: 500px) {
+          width: 90%;
+        }
       }
       .main_dish {
         width: 80%;
@@ -88,12 +92,10 @@
       }
       P {
         color: white;
-        font-family: "Lato", sans-serif;
+        font-family: "Montserrat", sans-serif;
         line-height: 1.8;
-        @media screen and (min-width: 800px) {
-          font-size: 1.1rem;
-          font-weight: normal;
-        }
+        font-weight: 100;
+        font-size: 1rem;
       }
     }
   }

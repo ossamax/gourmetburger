@@ -25,7 +25,8 @@
         margin: 1.5rem 0;
         font-size: 1rem;
         line-height: 1.5;
-        font-family: "Lato", sans-serif;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100;
       }
     }
     .ingredients_images {
@@ -45,39 +46,64 @@
         width: 65px;
         right: 0;
         top: 0;
+        @media screen and (min-width: 920px) {
+          width: 100px;
+          top: 2rem;
+        }
       }
       .topOftomato {
         width: 65px;
         right: 0;
         top: 3rem;
+        @media screen and (min-width: 920px) {
+          width: 120px;
+          right: 6rem;
+          top: 4rem;
+        }
       }
       .mushroom {
         width: 65px;
         right: 0;
         bottom: 0;
+        @media screen and (min-width: 920px) {
+          width: 120px;
+        }
       }
       .rawmeat {
         width: 50%;
         left: 6rem;
         @media screen and (min-width: 920px) {
           width: 40%;
-          left: 8rem;
+          left: 16rem;
         }
       }
       .say {
         width: 65px;
         left: 0;
         top: 0;
+        @media screen and (min-width: 920px) {
+          width: 120px;
+          top: 3rem;
+        }
       }
       .gredient_onion {
         width: 45px;
         left: 2rem;
         top: 5rem;
+        @media screen and (min-width: 920px) {
+          width: 95px;
+          left: 8rem;
+          top: 9rem;
+        }
       }
+
       .lemon {
         width: 65px;
         left: 0;
         bottom: 0;
+        @media screen and (min-width: 920px) {
+          width: 120px;
+        }
       }
     }
   }
@@ -92,7 +118,7 @@
   background-position: center center;
   transition: 0.3s ease-in-out;
   @media screen and(min-width:600px) {
-    height: 550px;
+    height: 520px;
   }
   .wrapper {
     display: flex;
