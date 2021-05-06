@@ -1,3 +1,77 @@
-footer{
-    
+footer {
+  .wrapper {
+    padding: 2rem 1rem;
+    @media screen and (min-width: 500px) {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 3rem 0;
+    }
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .footer_logo {
+        img {
+          width: 80px;
+        }
+      }
+      .email {
+        color: white;
+        font-family: "Lato", sans-serif;
+        padding: 1.5rem 0;
+        font-size: 0.9rem;
+        font-weight: 300;
+      }
+      .socila_media {
+        margin-top: 1rem;
+        a {
+          padding: 0 1rem;
+          img {
+            width: 17px;
+          }
+        }
+      }
+    }
+    .openening_hours {
+      text-align: center;
+      padding: 2rem 0;
+      @media screen and (min-width: 500px) {
+        padding: 0;
+      }
+      h4 {
+        color: #ab8d69;
+        font-family: "PT Serif", serif;
+      }
+      .days_hours_wrapper {
+        font-family: "Lato", sans-serif;
+        color: white;
+        margin: 1.4rem 0;
+
+        .days {
+          font-size: 0.9rem;
+        }
+        .hours {
+          margin-top: 0.4rem;
+        }
+      }
+    }
+    .location {
+      color: white;
+      font-family: "Lato", sans-serif;
+      text-align: center;
+      h4 {
+        color: #ab8d69;
+        font-family: "PT Serif", serif;
+      }
+      div {
+        margin: 1.2rem 0;
+        font-size: 0.9rem;
+        P {
+          padding: 0.3rem 0;
+        }
+      }
+    }
+  }
 }
