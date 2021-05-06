@@ -84,12 +84,12 @@
 }
 
 .footer_cta {
-  height: 450px;
+  height: 490px;
   background-image: url("../images/meetings.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   transition: 0.3s ease-in-out;
   @media screen and(min-width:600px) {
     height: 550px;
