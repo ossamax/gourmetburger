@@ -1000,7 +1000,7 @@ button {
 }
 
 footer .wrapper {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 
 @media screen and (min-width: 500px) {
@@ -1105,5 +1105,13 @@ footer .wrapper .location div {
 
 footer .wrapper .location div P {
   padding: 0.3rem 0;
+}
+
+footer .rights {
+  text-align: center;
+  color: #ab8d69;
+  font-family: "PT Serif", serif;
+  font-size: 0.8rem;
+  padding: 1rem 0;
 }
 /*# sourceMappingURL=home.css.map */

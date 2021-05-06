@@ -1,6 +1,6 @@
 footer {
   .wrapper {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     @media screen and (min-width: 500px) {
       display: flex;
       justify-content: space-around;
@@ -73,5 +73,12 @@ footer {
         }
       }
     }
+  }
+  .rights {
+    text-align: center;
+    color: #ab8d69;
+    font-family: "PT Serif", serif;
+    font-size: 0.8rem;
+    padding: 1rem 0;
   }
 }
