@@ -877,6 +877,8 @@ button {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 600px) {
