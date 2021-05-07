@@ -15,9 +15,11 @@
         color: white;
         font-size: 2rem;
         font-family: "PT Serif", serif;
+        margin-bottom: 1rem;
         @media screen and (min-width: 780px) {
           margin-top: 0.5rem;
           margin-right: 1rem;
+          margin-bottom: 0;
         }
       }
       .menu_links {
@@ -82,7 +84,7 @@
         }
       }
       .highlights {
-        background-color: hsla(0, 0%, 100%, 0.05);
+        background-color: #a9855b59;
         color: #acacac;
         margin-bottom: 3rem;
         @media screen and (min-width: 780px) {
@@ -111,7 +113,7 @@
         }
         .highlight_description {
           padding: 2rem 1rem 3rem;
-           @media screen and (min-width: 780px) {
+          @media screen and (min-width: 780px) {
             width: 50%;
           }
           .highlight_description_header {
