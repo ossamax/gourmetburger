@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+.menu .wrapper {
+  padding: 3rem 0;
+}
+
+.menu .wrapper .menu_header {
+  border-bottom: 0.2px solid #acacac;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 780px) {
+  .menu .wrapper .menu_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.menu .wrapper .menu_header h1 {
+  color: white;
+  font-size: 2rem;
+  font-family: "PT Serif", serif;
+}
+
+@media screen and (min-width: 780px) {
+  .menu .wrapper .menu_header h1 {
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .menu .wrapper .menu_header .menu_links {
+    font-size: 1.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+  }
+}
+
+.menu .wrapper .menu_header .menu_links a {
+  color: white;
+  font-family: "lato", serif;
+  font-size: 0.9rem;
+  padding: 0rem 0.5rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 780px) {
+  .menu .wrapper .menu_header .menu_links a {
+    margin-top: 0.9rem;
+  }
+}
+
+.menu .wrapper .menu_header .menu_links a:hover {
+  color: #ab8d69;
+}
+
+.menu .wrapper .category_wrapper .category {
+  color: white;
+}
+
+.menu .wrapper .category_wrapper .category h4 {
+  font-family: "Lato", sans-serif;
+  color: #ab8d69;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 780px) {
+  .menu .wrapper .category_wrapper .category .items_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.menu .wrapper .category_wrapper .category .items_wrapper .item {
+  margin: 2rem 0 4rem;
+}
+
+.menu .wrapper .category_wrapper .category .items_wrapper .item .name_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .wrapper .category_wrapper .category .items_wrapper .item .name_price .name {
+  font-family: "PT Serif", serif;
+}
+
+.menu .wrapper .category_wrapper .category .items_wrapper .item .name_price .price {
+  padding-left: 1rem;
+  font-family: " Merriweather", serif;
+  color: #ab8d69;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.menu .wrapper .category_wrapper .category .items_wrapper .item .description {
+  padding-top: 10px;
+  font-family: "Lato", sans-serif;
+  color: #acacac;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.menu .wrapper .category_wrapper .highlights {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #acacac;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 780px) {
+  .menu .wrapper .category_wrapper .highlights {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.menu .wrapper .category_wrapper .highlights .highlight_image {
+  height: 200px;
+  background-image: url("../images/highlights1-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (min-width: 780px) {
+  .menu .wrapper .category_wrapper .highlights .highlight_image {
+    width: 50%;
+  }
+}
+
+.menu .wrapper .category_wrapper .highlights .main_img {
+  background-image: url("../images/highlights2-unsplash.jpg");
+}
+
+.menu .wrapper .category_wrapper .highlights .steaks_img {
+  background-image: url("../images/highlights3-unsplash.jpg");
+}
+
+.menu .wrapper .category_wrapper .highlights .sides_img {
+  background-image: url("../images/highlights4-unsplash.jpg");
+}
+
+.menu .wrapper .category_wrapper .highlights .highlight_description {
+  padding: 2rem 1rem 3rem;
+}
+
+@media screen and (min-width: 780px) {
+  .menu .wrapper .category_wrapper .highlights .highlight_description {
+    width: 50%;
+  }
+}
+
+.menu .wrapper .category_wrapper .highlights .highlight_description .highlight_description_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+
+.menu .wrapper .category_wrapper .highlights .highlight_description .highlight_description_header .highlight_name {
+  font-family: "PT Serif", serif;
+}
+
+.menu .wrapper .category_wrapper .highlights .highlight_description .highlight_description_header .highlight_price {
+  padding-left: 1rem;
+  font-family: " Merriweather", serif;
+  color: #ab8d69;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.menu .wrapper .category_wrapper .highlights .highlight_description .text {
+  line-height: 1.8;
+  font-size: 0.9rem;
+  padding-top: 1rem;
+}
+/*# sourceMappingURL=menu.css.map */

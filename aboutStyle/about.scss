@@ -5,7 +5,7 @@
       color: white;
       text-align: center;
       @media screen and (min-width: 900px) {
-        width: 70%;
+        width: 60%;
         margin: auto;
       }
       h1 {
@@ -97,12 +97,16 @@
   background-color: hsla(0, 0%, 100%, 0.05);
   height: 480px;
   padding: 2rem 0;
+
   .wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: 100%;
+    @media screen and (min-width: 800px) {
+      width: 50%;
+    }
     .heading {
       text-align: center;
       h1 {

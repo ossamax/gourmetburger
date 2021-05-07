@@ -9,7 +9,7 @@
 
 @media screen and (min-width: 900px) {
   .about .wrapper .header {
-    width: 70%;
+    width: 60%;
     margin: auto;
   }
 }
@@ -152,6 +152,12 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .email_section .wrapper {
+    width: 50%;
+  }
 }
 
 .email_section .wrapper .heading {

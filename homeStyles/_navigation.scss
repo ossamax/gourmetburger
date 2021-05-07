@@ -79,7 +79,9 @@
           }
         }
         a.active {
-          color: #ab8d69;
+          @media screen and (min-width: 920px) {
+            color: #ab8d69;
+          }
         }
       }
       .cta_btn {

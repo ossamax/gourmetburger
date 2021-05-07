@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+.menu {
+  .wrapper {
+    padding: 3rem 0;
+    .menu_header {
+      border-bottom: 0.2px solid #acacac;
+      padding: 1rem 0;
+      margin-bottom: 2rem;
+      width: 100%;
+      @media screen and (min-width: 780px) {
+        display: flex;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        font-size: 2rem;
+        font-family: "PT Serif", serif;
+        @media screen and (min-width: 780px) {
+          margin-top: 0.5rem;
+          margin-right: 1rem;
+        }
+      }
+      .menu_links {
+        @media screen and (min-width: 780px) {
+          font-size: 1.1rem;
+          display: flex;
+          align-items: center;
+          width: 80%;
+        }
+        a {
+          color: white;
+          font-family: "lato", serif;
+          font-size: 0.9rem;
+          padding: 0rem 0.5rem;
+          transition: 0.3s ease-in-out;
+          @media screen and (min-width: 780px) {
+            margin-top: 0.9rem;
+          }
+          &:hover {
+            color: #ab8d69;
+          }
+        }
+      }
+    }
+    .category_wrapper {
+      .category {
+        color: white;
+        h4 {
+          font-family: "Lato", sans-serif;
+          color: #ab8d69;
+          text-transform: uppercase;
+        }
+        .items_wrapper {
+          @media screen and (min-width: 780px) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+          }
+          .item {
+            margin: 2rem 0 4rem;
+            .name_price {
+              display: flex;
+              align-items: center;
+              .name {
+                font-family: "PT Serif", serif;
+              }
+              .price {
+                padding-left: 1rem;
+                font-family: " Merriweather", serif;
+                color: #ab8d69;
+                font-size: 1.4rem;
+                font-weight: 400;
+              }
+            }
+            .description {
+              padding-top: 10px;
+              font-family: "Lato", sans-serif;
+              color: #acacac;
+              font-weight: 400;
+              line-height: 1.8;
+            }
+          }
+        }
+      }
+      .highlights {
+        background-color: hsla(0, 0%, 100%, 0.05);
+        color: #acacac;
+        margin-bottom: 3rem;
+        @media screen and (min-width: 780px) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .highlight_image {
+          height: 200px;
+          background-image: url("../images/highlights1-unsplash.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          @media screen and (min-width: 780px) {
+            width: 50%;
+          }
+        }
+        .main_img {
+          background-image: url("../images/highlights2-unsplash.jpg");
+        }
+        .steaks_img {
+          background-image: url("../images/highlights3-unsplash.jpg");
+        }
+        .sides_img {
+          background-image: url("../images/highlights4-unsplash.jpg");
+        }
+        .highlight_description {
+          padding: 2rem 1rem 3rem;
+           @media screen and (min-width: 780px) {
+            width: 50%;
+          }
+          .highlight_description_header {
+            display: flex;
+            color: white;
+            .highlight_name {
+              font-family: "PT Serif", serif;
+            }
+            .highlight_price {
+              padding-left: 1rem;
+              font-family: " Merriweather", serif;
+              color: #ab8d69;
+              font-size: 1.4rem;
+              font-weight: 400;
+            }
+          }
+          .text {
+            line-height: 1.8;
+            font-size: 0.9rem;
+            padding-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

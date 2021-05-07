@@ -171,8 +171,10 @@ button {
   }
 }
 
-.navigation .wrapper .links_container .links a.active {
-  color: #ab8d69;
+@media screen and (min-width: 920px) {
+  .navigation .wrapper .links_container .links a.active {
+    color: #ab8d69;
+  }
 }
 
 .navigation .wrapper .links_container .cta_btn button {
