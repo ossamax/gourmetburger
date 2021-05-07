@@ -1,0 +1,73 @@
+.about {
+  margin: 3rem 0;
+}
+
+.about .wrapper .header {
+  color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  .about .wrapper .header {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+.about .wrapper .header h1 {
+  font-size: 2rem;
+  font-family: "PT Serif", serif;
+}
+
+.about .wrapper .header p {
+  padding: 1.5rem 1rem;
+  line-height: 1.8;
+  font-family: "Lato", sans-serif;
+}
+
+.about .wrapper .header button {
+  color: white;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  font-family: "PT Serif", serif;
+  font-size: 1rem;
+}
+
+.about .wrapper .team {
+  margin: 3rem 0;
+  color: white;
+  text-align: center;
+}
+
+.about .wrapper .team .chef_image {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.about .wrapper .team .one {
+  background-image: url("../images/louis-hansel-v3OlBE6-fhU-unsplash.jpg");
+}
+
+.about .wrapper .team .two {
+  background-image: url("../images/jesson-mata-I2Erl2cU_A4-unsplash.jpg");
+}
+
+.about .wrapper .team .tree {
+  background-image: url("../images/sebastian-coman-photography-eBmyH7oO5wY-unsplash.jpg");
+}
+
+.about .wrapper .team .chef h1 {
+  font-size: 2rem;
+  font-family: "PT Serif", serif;
+  margin-top: 2rem;
+}
+
+.about .wrapper .team .chef p {
+  padding: 1rem 1rem;
+  line-height: 1.8;
+  font-family: "Lato", sans-serif;
+}
+/*# sourceMappingURL=about.css.map */

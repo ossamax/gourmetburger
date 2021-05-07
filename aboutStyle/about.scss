@@ -1,0 +1,79 @@
+.about {
+  margin: 3rem 0;
+  .wrapper {
+    .header {
+      color: white;
+      text-align: center;
+      @media screen and (min-width: 900px) {
+        width: 70%;
+        margin: auto;
+      }
+      h1 {
+        font-size: 2rem;
+        font-family: "PT Serif", serif;
+      }
+      p {
+        padding: 1.5rem 1rem;
+        line-height: 1.8;
+        font-family: "Lato", sans-serif;
+      }
+      button {
+        color: white;
+        border-bottom: 1px solid white;
+        background-color: transparent;
+        font-family: "PT Serif", serif;
+        font-size: 1rem;
+      }
+    }
+    .team {
+      margin: 3rem 0;
+      color: white;
+      text-align: center;
+      .chef_image {
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .one {
+        background-image: url("../images/louis-hansel-v3OlBE6-fhU-unsplash.jpg");
+      }
+      .two {
+        background-image: url("../images/jesson-mata-I2Erl2cU_A4-unsplash.jpg");
+      }
+      .tree {
+        background-image: url("../images/sebastian-coman-photography-eBmyH7oO5wY-unsplash.jpg");
+      }
+      .chef {
+        h1 {
+          font-size: 2rem;
+          font-family: "PT Serif", serif;
+          margin-top: 2rem;
+        }
+        p {
+          padding: 1rem 1rem;
+          line-height: 1.8;
+          font-family: "Lato", sans-serif;
+        }
+      }
+    }
+  }
+}
+
+.email_section {
+  .wrapper {
+    .heading {
+      h1 {
+      }
+      p {
+      }
+    }
+    .form {
+      input {
+      }
+      button {
+      }
+    }
+  }
+}
