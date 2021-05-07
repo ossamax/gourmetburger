@@ -48,6 +48,7 @@
         justify-content: space-around;
         padding: 3rem 0;
         transform: translateX(-100rem);
+        box-shadow: -9px 61px 87px #020202;
       }
       .links {
         @media screen and (max-width: 920px) {
@@ -64,6 +65,7 @@
           font-weight: 300;
           margin: 0 0.6rem;
           transition: 0.3s ease-in-out;
+
           @media screen and (max-width: 920px) {
             font-size: 1.1rem;
             font-weight: bold;
@@ -75,6 +77,9 @@
               color: #ab8d69;
             }
           }
+        }
+        a.active {
+          color: #ab8d69;
         }
       }
       .cta_btn {

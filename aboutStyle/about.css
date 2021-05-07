@@ -39,24 +39,79 @@
   text-align: center;
 }
 
+@media screen and (min-width: 900px) {
+  .about .wrapper .team {
+    text-align: left;
+  }
+}
+
+.about .wrapper .team .chef_wrapper {
+  padding: 3rem 0;
+}
+
+@media screen and (min-width: 900px) {
+  .about .wrapper .team .chef_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+  }
+}
+
 .about .wrapper .team .chef_image {
   height: 500px;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
+@media screen and (min-width: 900px) {
+  .about .wrapper .team .chef_image {
+    width: 50%;
+    height: 600px;
+  }
+}
+
 .about .wrapper .team .one {
   background-image: url("../images/louis-hansel-v3OlBE6-fhU-unsplash.jpg");
+  background-position: center center;
+}
+
+@media screen and (min-width: 900px) {
+  .about .wrapper .team .one {
+    background-position: -7rem -77rem;
+  }
 }
 
 .about .wrapper .team .two {
   background-image: url("../images/jesson-mata-I2Erl2cU_A4-unsplash.jpg");
 }
 
+@media screen and (min-width: 900px) {
+  .about .wrapper .team .two {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    background-position: 29rem -4rem;
+  }
+}
+
 .about .wrapper .team .tree {
   background-image: url("../images/sebastian-coman-photography-eBmyH7oO5wY-unsplash.jpg");
+  background-position: center center;
+}
+
+@media screen and (min-width: 900px) {
+  .about .wrapper .team .chef {
+    width: 48%;
+    padding: 2rem;
+  }
 }
 
 .about .wrapper .team .chef h1 {
@@ -69,5 +124,95 @@
   padding: 1rem 1rem;
   line-height: 1.8;
   font-family: "Lato", sans-serif;
+}
+
+@media screen and (min-width: 900px) {
+  .about .wrapper .team .chef p {
+    padding: 0.5rem 0;
+  }
+}
+
+.email_section {
+  background-color: rgba(255, 255, 255, 0.05);
+  height: 480px;
+  padding: 2rem 0;
+}
+
+.email_section .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.email_section .wrapper .heading {
+  text-align: center;
+}
+
+.email_section .wrapper .heading h1 {
+  font-family: "Great Vibes", cursive;
+  color: #ab8d69;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.email_section .wrapper .heading p {
+  font-family: "Lato", sans-serif;
+  color: #acacac;
+  font-size: 1rem;
+}
+
+.email_section .wrapper .form {
+  text-align: center;
+  width: 100%;
+}
+
+.email_section .wrapper .form input {
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #ab8d69;
+  padding: 1rem 2rem;
+  outline: none;
+  color: #acacac;
+}
+
+.email_section .wrapper .form input::-webkit-input-placeholder {
+  color: #acacac;
+  font-family: "Lato", sans-serif;
+}
+
+.email_section .wrapper .form input:-ms-input-placeholder {
+  color: #acacac;
+  font-family: "Lato", sans-serif;
+}
+
+.email_section .wrapper .form input::-ms-input-placeholder {
+  color: #acacac;
+  font-family: "Lato", sans-serif;
+}
+
+.email_section .wrapper .form input::placeholder {
+  color: #acacac;
+  font-family: "Lato", sans-serif;
+}
+
+.email_section .wrapper .form button {
+  background-color: #ab8d69;
+  color: white;
+  font-family: "Lato", sans-serif;
+  padding: 0.8rem 3rem;
+  font-size: 1.1rem;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=about.css.map */

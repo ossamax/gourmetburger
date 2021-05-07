@@ -123,6 +123,8 @@ button {
     padding: 3rem 0;
     -webkit-transform: translateX(-100rem);
             transform: translateX(-100rem);
+    -webkit-box-shadow: -9px 61px 87px #020202;
+            box-shadow: -9px 61px 87px #020202;
   }
 }
 
@@ -167,6 +169,10 @@ button {
   .navigation .wrapper .links_container .links a:hover {
     color: #ab8d69;
   }
+}
+
+.navigation .wrapper .links_container .links a.active {
+  color: #ab8d69;
 }
 
 .navigation .wrapper .links_container .cta_btn button {

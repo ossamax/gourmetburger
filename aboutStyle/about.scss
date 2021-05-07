@@ -29,23 +29,52 @@
       margin: 3rem 0;
       color: white;
       text-align: center;
+      @media screen and (min-width: 900px) {
+        text-align: left;
+      }
+      .chef_wrapper {
+        padding: 3rem 0;
+        @media screen and (min-width: 900px) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0;
+        }
+      }
       .chef_image {
         height: 500px;
         background-repeat: no-repeat;
-        background-position: center;
+
         background-size: cover;
         background-attachment: fixed;
+        @media screen and (min-width: 900px) {
+          width: 50%;
+          height: 600px;
+        }
       }
       .one {
         background-image: url("../images/louis-hansel-v3OlBE6-fhU-unsplash.jpg");
+        background-position: center center;
+        @media screen and (min-width: 900px) {
+          background-position: -7rem -77rem;
+        }
       }
       .two {
         background-image: url("../images/jesson-mata-I2Erl2cU_A4-unsplash.jpg");
+        @media screen and (min-width: 900px) {
+          order: 2;
+          background-position: 29rem -4rem;
+        }
       }
       .tree {
         background-image: url("../images/sebastian-coman-photography-eBmyH7oO5wY-unsplash.jpg");
+        background-position: center center;
       }
       .chef {
+        @media screen and (min-width: 900px) {
+          width: 48%;
+          padding: 2rem;
+        }
         h1 {
           font-size: 2rem;
           font-family: "PT Serif", serif;
@@ -55,6 +84,9 @@
           padding: 1rem 1rem;
           line-height: 1.8;
           font-family: "Lato", sans-serif;
+          @media screen and (min-width: 900px) {
+            padding: 0.5rem 0;
+          }
         }
       }
     }
@@ -62,17 +94,53 @@
 }
 
 .email_section {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  height: 480px;
+  padding: 2rem 0;
   .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
     .heading {
+      text-align: center;
       h1 {
+        font-family: "Great Vibes", cursive;
+        color: #ab8d69;
+        font-size: 3rem;
+        font-weight: normal;
       }
       p {
+        font-family: "Lato", sans-serif;
+        color: #acacac;
+        font-size: 1rem;
       }
     }
     .form {
+      text-align: center;
+      width: 100%;
       input {
+        width: 100%;
+        background-color: transparent;
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid #ab8d69;
+        padding: 1rem 2rem;
+        outline: none;
+        color: #acacac;
+      }
+      input::placeholder {
+        color: #acacac;
+        font-family: "Lato", sans-serif;
       }
       button {
+        background-color: #ab8d69;
+        color: white;
+        font-family: "Lato", sans-serif;
+        padding: 0.8rem 3rem;
+        font-size: 1.1rem;
+        margin-top: 2rem;
       }
     }
   }
