@@ -59,7 +59,7 @@
   }
 
   .list {
-    margin-top: 4rem;
+    margin-top: 2rem;
     .event_img {
       height: 200px;
       background-repeat: no-repeat;
@@ -67,7 +67,7 @@
       background-position: center;
     }
     .event_info {
-      padding: 2.5rem 1rem;
+      padding: 2rem 1rem 3rem;
       text-align: center;
       border-bottom: 1px solid rgba(167, 166, 166, 0.288);
       @media screen and (min-width: 900px) {

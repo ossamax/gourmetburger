@@ -1,0 +1,75 @@
+.careers_hero {
+  background-image: url("../images/careers-unsplash\ \(1\)\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  .overlay {
+    background-color: rgba(26, 26, 26, 0.7);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .wrapper {
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+    z-index: 2;
+    h3 {
+      font-family: "Great Vibes", cursive;
+      color: #ab8d69;
+      font-size: 28px;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+    h2 {
+      margin-top: 5px;
+      font-family: "PT Serif", serif;
+      color: #fff;
+      padding: 0 2rem;
+    }
+  }
+}
+
+.positions {
+  height: 100vh;
+
+  .wrapper {
+    position: relative;
+    margin: auto;
+    top: -7rem;
+    background-color: #02001b;
+    height: 100%;
+    z-index: 4;
+    padding: 2.5rem 1rem;
+    .oportunities {
+      color: white;
+      div {
+        padding: 0.6rem 1rem;
+        font-family: "PT Serif", serif;
+        cursor: pointer;
+        margin: 1rem 0;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        span {
+          float: right;
+        }
+        &:hover {
+          background-color: #1d195fc4;
+        }
+      }
+      div.active {
+        background-color: #ab8d69;
+      }
+    }
+    .roles {
+      .header {
+        color: #ab8d69;
+      }
+    }
+  }
+}

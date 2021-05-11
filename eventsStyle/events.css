@@ -89,7 +89,7 @@
 }
 
 .events_list .list {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .events_list .list .event_img {
@@ -100,7 +100,7 @@
 }
 
 .events_list .list .event_info {
-  padding: 2.5rem 1rem;
+  padding: 2rem 1rem 3rem;
   text-align: center;
   border-bottom: 1px solid rgba(167, 166, 166, 0.288);
 }

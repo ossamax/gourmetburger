@@ -1,0 +1,85 @@
+.careers_hero {
+  background-image: url("../images/careers-unsplash (1) (1).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+}
+
+.careers_hero .overlay {
+  background-color: rgba(26, 26, 26, 0.7);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.careers_hero .wrapper {
+  text-align: center;
+  padding: 4rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+.careers_hero .wrapper h3 {
+  font-family: "Great Vibes", cursive;
+  color: #ab8d69;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.careers_hero .wrapper h2 {
+  margin-top: 5px;
+  font-family: "PT Serif", serif;
+  color: #fff;
+  padding: 0 2rem;
+}
+
+.positions {
+  height: 100vh;
+}
+
+.positions .wrapper {
+  position: relative;
+  margin: auto;
+  top: -7rem;
+  background-color: #02001b;
+  height: 100%;
+  z-index: 4;
+  padding: 2.5rem 1rem;
+}
+
+.positions .wrapper .oportunities {
+  color: white;
+}
+
+.positions .wrapper .oportunities div {
+  padding: 0.6rem 1rem;
+  font-family: "PT Serif", serif;
+  cursor: pointer;
+  margin: 1rem 0;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.positions .wrapper .oportunities div span {
+  float: right;
+}
+
+.positions .wrapper .oportunities div:hover {
+  background-color: #1d195fc4;
+}
+
+.positions .wrapper .oportunities div.active {
+  background-color: #ab8d69;
+}
+
+.positions .wrapper .roles .header {
+  color: #ab8d69;
+}
+/*# sourceMappingURL=careers.css.map */
