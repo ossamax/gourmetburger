@@ -1,55 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
-.menu .wrapper {
+.menu_section .wrapper {
   padding: 3rem 0;
+  position: relative;
 }
 
-.menu .wrapper .menu_header {
-  border-bottom: 0.2px solid #acacac;
-  padding: 1rem 0;
-  margin-bottom: 2rem;
-  width: 100%;
-}
-
-@media screen and (min-width: 780px) {
-  .menu .wrapper .menu_header {
+@media screen and (min-width: 920px) {
+  .menu_section .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-.menu .wrapper .menu_header h1 {
+.menu_section .wrapper .menu_header_a {
+  border-bottom: 0.2px solid #acacac;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 920px) {
+  .menu_section .wrapper .menu_header_a {
+    border: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 0;
+  }
+}
+
+.menu_section .wrapper .menu_header_a h1 {
   color: white;
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-family: "PT Serif", serif;
   margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 780px) {
-  .menu .wrapper .menu_header h1 {
-    margin-top: 0.5rem;
+  .menu_section .wrapper .menu_header_a h1 {
     margin-right: 1rem;
     margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 780px) {
-  .menu .wrapper .menu_header .menu_links {
+  .menu_section .wrapper .menu_header_a .menu_links_a {
     font-size: 1.1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 80%;
+    width: 70%;
   }
 }
 
-.menu .wrapper .menu_header .menu_links a {
+@media screen and (min-width: 920px) {
+  .menu_section .wrapper .menu_header_a .menu_links_a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.menu_section .wrapper .menu_header_a .menu_links_a a {
   color: white;
   font-family: "lato", serif;
   font-size: 0.9rem;
@@ -59,39 +76,60 @@
 }
 
 @media screen and (min-width: 780px) {
-  .menu .wrapper .menu_header .menu_links a {
+  .menu_section .wrapper .menu_header_a .menu_links_a a {
     margin-top: 0.9rem;
   }
 }
 
-.menu .wrapper .menu_header .menu_links a:hover {
+@media screen and (min-width: 920px) {
+  .menu_section .wrapper .menu_header_a .menu_links_a a {
+    font-size: 1rem;
+    margin-top: 1.4rem;
+    padding: 0;
+  }
+}
+
+.menu_section .wrapper .menu_header_a .menu_links_a a:hover {
   color: #ab8d69;
 }
 
-.menu .wrapper .category_wrapper .category {
+.menu_section .wrapper .menu_header_a .menu_links_a a.active {
+  color: #ab8d69;
+}
+
+@media screen and (min-width: 920px) {
+  .menu_section .wrapper .category_wrapper {
+    width: 85%;
+  }
+}
+
+.menu_section .wrapper .category_wrapper .category {
   color: white;
 }
 
-.menu .wrapper .category_wrapper .category h4 {
+.menu_section .wrapper .category_wrapper .category h4 {
   font-family: "Lato", sans-serif;
   color: #ab8d69;
   text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 780px) {
-  .menu .wrapper .category_wrapper .category .items_wrapper {
+  .menu_section .wrapper .category_wrapper .category .items_wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+    grid-auto-columns: auto;
+    row-gap: 30px;
   }
 }
 
-.menu .wrapper .category_wrapper .category .items_wrapper .item {
+.menu_section .wrapper .category_wrapper .category .items_wrapper .item {
   margin: 2rem 0 4rem;
 }
 
-.menu .wrapper .category_wrapper .category .items_wrapper .item .name_price {
+.menu_section .wrapper .category_wrapper .category .items_wrapper .item .name_price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,11 +138,11 @@
           align-items: center;
 }
 
-.menu .wrapper .category_wrapper .category .items_wrapper .item .name_price .name {
+.menu_section .wrapper .category_wrapper .category .items_wrapper .item .name_price .name {
   font-family: "PT Serif", serif;
 }
 
-.menu .wrapper .category_wrapper .category .items_wrapper .item .name_price .price {
+.menu_section .wrapper .category_wrapper .category .items_wrapper .item .name_price .price {
   padding-left: 1rem;
   font-family: " Merriweather", serif;
   color: #ab8d69;
@@ -112,7 +150,7 @@
   font-weight: 400;
 }
 
-.menu .wrapper .category_wrapper .category .items_wrapper .item .description {
+.menu_section .wrapper .category_wrapper .category .items_wrapper .item .description {
   padding-top: 10px;
   font-family: "Lato", sans-serif;
   color: #acacac;
@@ -120,14 +158,14 @@
   line-height: 1.8;
 }
 
-.menu .wrapper .category_wrapper .highlights {
+.menu_section .wrapper .category_wrapper .highlights {
   background-color: #a9855b59;
   color: #acacac;
   margin-bottom: 3rem;
 }
 
 @media screen and (min-width: 780px) {
-  .menu .wrapper .category_wrapper .highlights {
+  .menu_section .wrapper .category_wrapper .highlights {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -140,7 +178,7 @@
   }
 }
 
-.menu .wrapper .category_wrapper .highlights .highlight_image {
+.menu_section .wrapper .category_wrapper .highlights .highlight_image {
   height: 200px;
   background-image: url("../images/highlights1-unsplash.jpg");
   background-repeat: no-repeat;
@@ -149,45 +187,57 @@
 }
 
 @media screen and (min-width: 780px) {
-  .menu .wrapper .category_wrapper .highlights .highlight_image {
+  .menu_section .wrapper .category_wrapper .highlights .highlight_image {
     width: 50%;
   }
 }
 
-.menu .wrapper .category_wrapper .highlights .main_img {
+@media screen and (min-width: 920px) {
+  .menu_section .wrapper .category_wrapper .highlights .highlight_image {
+    height: 300px;
+  }
+}
+
+.menu_section .wrapper .category_wrapper .highlights .main_img {
   background-image: url("../images/highlights2-unsplash.jpg");
 }
 
-.menu .wrapper .category_wrapper .highlights .steaks_img {
+.menu_section .wrapper .category_wrapper .highlights .steaks_img {
   background-image: url("../images/highlights3-unsplash.jpg");
 }
 
-.menu .wrapper .category_wrapper .highlights .sides_img {
+.menu_section .wrapper .category_wrapper .highlights .sides_img {
   background-image: url("../images/highlights4-unsplash.jpg");
 }
 
-.menu .wrapper .category_wrapper .highlights .highlight_description {
+.menu_section .wrapper .category_wrapper .highlights .highlight_description {
   padding: 2rem 1rem 3rem;
 }
 
 @media screen and (min-width: 780px) {
-  .menu .wrapper .category_wrapper .highlights .highlight_description {
+  .menu_section .wrapper .category_wrapper .highlights .highlight_description {
     width: 50%;
   }
 }
 
-.menu .wrapper .category_wrapper .highlights .highlight_description .highlight_description_header {
+@media screen and (min-width: 920px) {
+  .menu_section .wrapper .category_wrapper .highlights .highlight_description {
+    padding: 3rem;
+  }
+}
+
+.menu_section .wrapper .category_wrapper .highlights .highlight_description .highlight_description_header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: white;
 }
 
-.menu .wrapper .category_wrapper .highlights .highlight_description .highlight_description_header .highlight_name {
+.menu_section .wrapper .category_wrapper .highlights .highlight_description .highlight_description_header .highlight_name {
   font-family: "PT Serif", serif;
 }
 
-.menu .wrapper .category_wrapper .highlights .highlight_description .highlight_description_header .highlight_price {
+.menu_section .wrapper .category_wrapper .highlights .highlight_description .highlight_description_header .highlight_price {
   padding-left: 1rem;
   font-family: " Merriweather", serif;
   color: #ab8d69;
@@ -195,7 +245,7 @@
   font-weight: 400;
 }
 
-.menu .wrapper .category_wrapper .highlights .highlight_description .text {
+.menu_section .wrapper .category_wrapper .highlights .highlight_description .text {
   line-height: 1.8;
   font-size: 0.9rem;
   padding-top: 1rem;

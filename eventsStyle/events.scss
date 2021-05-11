@@ -1,0 +1,99 @@
+.events {
+  height: 85vh;
+  background-image: url("../images/events_hero-unsplash\ \(1\).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .wrapper {
+    height: 100%;
+    .events_hero_section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.342);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        z-index: 1;
+      }
+      .events_hero_content {
+        text-align: center;
+        color: white;
+        position: relative;
+        z-index: 2;
+        @media screen and (min-width: 780px) {
+          width: 50%;
+        }
+        h1 {
+          font-size: 3rem;
+          font-family: "PT Serif", serif;
+          @media screen and (min-width: 780px) {
+            font-size: 4rem;
+          }
+        }
+        p {
+          font-size: 1.1rem;
+          font-family: "Lato", sans-serif;
+          line-height: 1.8;
+          @media screen and (min-width: 780px) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+.events_list {
+  margin: 4rem 0;
+  .wrapper {
+    @media screen and (min-width: 900px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 40px;
+    }
+  }
+
+  .list {
+    margin-top: 4rem;
+    .event_img {
+      height: 200px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .event_info {
+      padding: 2.5rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(167, 166, 166, 0.288);
+      @media screen and (min-width: 900px) {
+        border-bottom: none;
+      }
+      h1 {
+        font-family: "Great Vibes", cursive;
+        color: white;
+        font-weight: normal;
+        font-size: 2.2rem;
+        margin: 1rem 0;
+      }
+      p {
+        font-family: "Lato", sans-serif;
+        color: #acacac;
+        line-height: 1.8;
+      }
+      button {
+        font-family: "PT Serif", serif;
+        color: #ab8d69;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        &:hover {
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+}

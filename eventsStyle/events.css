@@ -1,0 +1,139 @@
+.events {
+  height: 85vh;
+  background-image: url("../images/events_hero-unsplash (1).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.events .wrapper {
+  height: 100%;
+}
+
+.events .wrapper .events_hero_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.events .wrapper .events_hero_section .overlay {
+  background-color: rgba(0, 0, 0, 0.342);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.events .wrapper .events_hero_section .events_hero_content {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (min-width: 780px) {
+  .events .wrapper .events_hero_section .events_hero_content {
+    width: 50%;
+  }
+}
+
+.events .wrapper .events_hero_section .events_hero_content h1 {
+  font-size: 3rem;
+  font-family: "PT Serif", serif;
+}
+
+@media screen and (min-width: 780px) {
+  .events .wrapper .events_hero_section .events_hero_content h1 {
+    font-size: 4rem;
+  }
+}
+
+.events .wrapper .events_hero_section .events_hero_content p {
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 780px) {
+  .events .wrapper .events_hero_section .events_hero_content p {
+    font-size: 1.5rem;
+  }
+}
+
+.events_list {
+  margin: 4rem 0;
+}
+
+@media screen and (min-width: 900px) {
+  .events_list .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+  }
+}
+
+.events_list .list {
+  margin-top: 4rem;
+}
+
+.events_list .list .event_img {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.events_list .list .event_info {
+  padding: 2.5rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(167, 166, 166, 0.288);
+}
+
+@media screen and (min-width: 900px) {
+  .events_list .list .event_info {
+    border-bottom: none;
+  }
+}
+
+.events_list .list .event_info h1 {
+  font-family: "Great Vibes", cursive;
+  color: white;
+  font-weight: normal;
+  font-size: 2.2rem;
+  margin: 1rem 0;
+}
+
+.events_list .list .event_info p {
+  font-family: "Lato", sans-serif;
+  color: #acacac;
+  line-height: 1.8;
+}
+
+.events_list .list .event_info button {
+  font-family: "PT Serif", serif;
+  color: #ab8d69;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.events_list .list .event_info button:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+/*# sourceMappingURL=events.css.map */

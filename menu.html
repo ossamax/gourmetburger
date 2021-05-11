@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="menuStyle/menu.css" />
     <title>Menu</title>
   </head>
+
   <body>
     <section class="navigation">
       <div class="wrapper">
@@ -29,7 +30,7 @@
           <div class="links">
             <a href="about.html">About</a>
             <a href="menu.html" class="active">Menu</a>
-            <a href="#">Events</a>
+            <a href="events.html">Events</a>
             <a href="#">Press</a>
             <a href="#">Careers</a>
             <a href="#">Contact</a>
@@ -40,20 +41,20 @@
         </div>
       </div>
     </section>
-    <section class="menu">
+    <section class="menu_section">
       <div class="wrapper">
-        <div class="menu_header">
-          <h1>Menu</h1>
-          <div class="menu_links">
-            <a href="#">STARTERS</a>
-            <a href="#">MAINS</a>
-            <a href="#">STEAKS</a>
-            <a href="#">SIDES</a>
-            <a href="#">DESSERT</a>
+        <div class="menu_header_a">
+          <div><h1>Menu</h1></div>
+          <div class="menu_links_a">
+            <a class="menu-link" href="#" data-link="starters">STARTERS</a>
+            <a class="menu-link" href="#" data-link="mains">MAINS</a>
+            <a class="menu-link" href="#" data-link="steaks">STEAKS</a>
+            <a class="menu-link" href="#" data-link="sides">SIDES</a>
+            <a class="menu-link" href="#" data-link="dessert">DESSERT</a>
           </div>
         </div>
         <div class="category_wrapper">
-          <div class="category">
+          <div class="category" data-link="starters">
             <h4>starters</h4>
             <div class="items_wrapper">
               <div class="item">
@@ -182,7 +183,7 @@
               </div>
             </div>
           </div>
-          <div class="category">
+          <div class="category" data-link="mains">
             <h4>mains</h4>
             <div class="items_wrapper">
               <div class="item">
@@ -311,7 +312,7 @@
             </div>
             <div class="highlight_image main_img"></div>
           </div>
-          <div class="category">
+          <div class="category" data-link="steaks">
             <h4>steaks</h4>
             <div class="items_wrapper">
               <div class="item">
@@ -407,7 +408,7 @@
             </div>
             <div class="highlight_image steaks_img"></div>
           </div>
-          <div class="category">
+          <div class="category" data-link="sides">
             <h4>sides</h4>
             <div class="items_wrapper">
               <div class="item">
@@ -503,17 +504,103 @@
               </div>
             </div>
           </div>
+          <div class="category" data-link="dessert">
+            <h4>sides</h4>
+            <div class="items_wrapper">
+              <div class="item">
+                <div class="name_price">
+                  <div class="name">Menu Item</div>
+                  <div class="price">$9.99</div>
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </div>
+              </div>
+              <div class="item">
+                <div class="name_price">
+                  <div class="name">Menu Item</div>
+                  <div class="price">$9.99</div>
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </div>
+              </div>
+              <div class="item">
+                <div class="name_price">
+                  <div class="name">Menu Item</div>
+                  <div class="price">$9.99</div>
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </div>
+              </div>
+              <div class="item">
+                <div class="name_price">
+                  <div class="name">Menu Item</div>
+                  <div class="price">$9.99</div>
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </div>
+              </div>
+              <div class="item">
+                <div class="name_price">
+                  <div class="name">Menu Item</div>
+                  <div class="price">$9.99</div>
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </div>
+              </div>
+              <div class="item">
+                <div class="name_price">
+                  <div class="name">Menu Item</div>
+                  <div class="price">$9.99</div>
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </div>
+              </div>
+              <div class="item">
+                <div class="name_price">
+                  <div class="name">Menu Item</div>
+                  <div class="price">$9.99</div>
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="footer_cta">
       <div class="wrapper">
         <div class="left">
-          <button>Discover the Menu <span>↠</span></button>
+          <a href="menu.html">
+            <button>Discover the Menu <span>↠</span></button></a
+          >
         </div>
         <div class="md-border"></div>
         <div class="right">
-          <button>Book Your Table <span>↠</span></button>
+          <a href="https://www.opentable.com/" target="_blank">
+            <button>Book Your Table <span>↠</span></button></a
+          >
         </div>
       </div>
     </section>

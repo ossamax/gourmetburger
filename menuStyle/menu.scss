@@ -1,33 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
-.menu {
+.menu_section {
   .wrapper {
     padding: 3rem 0;
-    .menu_header {
+    position: relative;
+    @media screen and (min-width: 920px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu_header_a {
       border-bottom: 0.2px solid #acacac;
       padding: 1rem 0;
       margin-bottom: 2rem;
-      width: 100%;
-      @media screen and (min-width: 780px) {
-        display: flex;
-        align-items: center;
+      @media screen and (min-width: 920px) {
+        border: none;
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+        padding: 0;
       }
+
       h1 {
         color: white;
-        font-size: 2rem;
+        font-size: 2.4rem;
         font-family: "PT Serif", serif;
         margin-bottom: 1rem;
         @media screen and (min-width: 780px) {
-          margin-top: 0.5rem;
           margin-right: 1rem;
           margin-bottom: 0;
         }
       }
-      .menu_links {
+      .menu_links_a {
         @media screen and (min-width: 780px) {
           font-size: 1.1rem;
           display: flex;
-          align-items: center;
-          width: 80%;
+          width: 70%;
+        }
+        @media screen and (min-width: 920px) {
+          flex-direction: column;
         }
         a {
           color: white;
@@ -38,24 +48,39 @@
           @media screen and (min-width: 780px) {
             margin-top: 0.9rem;
           }
+          @media screen and (min-width: 920px) {
+            font-size: 1rem;
+            margin-top: 1.4rem;
+            padding: 0;
+          }
           &:hover {
             color: #ab8d69;
           }
         }
+        a.active {
+          color: #ab8d69;
+        }
       }
     }
+
     .category_wrapper {
+      @media screen and (min-width: 920px) {
+        width: 85%;
+      }
       .category {
         color: white;
         h4 {
           font-family: "Lato", sans-serif;
           color: #ab8d69;
           text-transform: uppercase;
+          font-size: 1.2rem;
         }
         .items_wrapper {
           @media screen and (min-width: 780px) {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+            grid-auto-columns: auto;
+            row-gap: 30px;
           }
           .item {
             margin: 2rem 0 4rem;
@@ -101,6 +126,9 @@
           @media screen and (min-width: 780px) {
             width: 50%;
           }
+          @media screen and (min-width: 920px) {
+            height: 300px;
+          }
         }
         .main_img {
           background-image: url("../images/highlights2-unsplash.jpg");
@@ -115,6 +143,9 @@
           padding: 2rem 1rem 3rem;
           @media screen and (min-width: 780px) {
             width: 50%;
+          }
+          @media screen and (min-width: 920px) {
+            padding: 3rem;
           }
           .highlight_description_header {
             display: flex;
