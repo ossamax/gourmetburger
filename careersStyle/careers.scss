@@ -5,6 +5,9 @@
   background-position: center;
   height: 60vh;
   position: relative;
+  @media screen and (min-width: 800px) {
+    height: 80vh;
+  }
   .overlay {
     background-color: rgba(26, 26, 26, 0.7);
     position: absolute;
@@ -19,25 +22,38 @@
     padding: 4rem 0;
     position: relative;
     z-index: 2;
+    @media screen and (min-width: 800px) {
+      padding-top: 8rem;
+      text-align: left;
+    }
     h3 {
       font-family: "Great Vibes", cursive;
       color: #ab8d69;
       font-size: 28px;
       font-weight: 400;
       letter-spacing: 2px;
+      @media screen and (min-width: 800px) {
+        font-size: 35px;
+      }
     }
     h2 {
       margin-top: 5px;
       font-family: "PT Serif", serif;
       color: #fff;
       padding: 0 2rem;
+      @media screen and (min-width: 800px) {
+        font-size: 40px;
+        padding: 0;
+        width: 350px;
+      }
     }
   }
 }
 
 .positions {
-  height: 100vh;
-
+  @media screen and (min-width: 800px) {
+    height: 50vh;
+  }
   .wrapper {
     position: relative;
     margin: auto;
@@ -46,8 +62,17 @@
     height: 100%;
     z-index: 4;
     padding: 2.5rem 1rem;
+    @media screen and (min-width: 800px) {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      top: -9rem;
+    }
     .oportunities {
       color: white;
+      @media screen and (min-width: 800px) {
+        width: 50%;
+      }
       div {
         padding: 0.6rem 1rem;
         font-family: "PT Serif", serif;
@@ -67,8 +92,27 @@
       }
     }
     .roles {
+      padding: 2.5rem 1rem;
+      @media screen and (min-width: 800px) {
+        padding: 1rem 0;
+      }
       .header {
         color: #ab8d69;
+        font-family: "PT Serif", serif;
+        padding-bottom: 0.8rem;
+      }
+      .positions_to_apply_for {
+        display: none;
+      }
+      .positions_to_apply_for.active {
+        display: block;
+        font-family: "Lato", sans-serif;
+        color: white;
+        transition: 0.3s ease-in-out;
+        div {
+          margin: 1rem 0;
+          padding: 0.5rem 0rem;
+        }
       }
     }
   }

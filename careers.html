@@ -50,20 +50,34 @@
     <section class="positions">
       <div class="wrapper">
         <div class="oportunities">
-          <div class="active">All <span>(6)</span></div>
-          <div>Management <span>(2)</span></div>
-          <div>Food & Bar <span>(3)</span></div>
-          <div>Sales/Marketing <span>(1)</span></div>
+          <div class="oportunity active">All <span>(6)</span></div>
+          <div class="oportunity">Management <span>(2)</span></div>
+          <div class="oportunity">Food & Bar <span>(3)</span></div>
+          <div class="oportunity">
+            Sales/Marketing/Operations <span>(1)</span>
+          </div>
         </div>
         <div class="roles">
           <div class="header">Open Roles</div>
-          <div class="all">
+          <div class="positions_to_apply_for active">
             <div>Events Coordinator</div>
             <div>Assistant Manager</div>
             <div>General Manager</div>
             <div>Bartender</div>
             <div>Waitress</div>
             <div>Assistant Chef</div>
+          </div>
+          <div class="positions_to_apply_for">
+            <div>Assistant Manager</div>
+            <div>General Manager</div>
+          </div>
+          <div class="positions_to_apply_for">
+            <div>Bartender</div>
+            <div>Waitress</div>
+            <div>Assistant Chef</div>
+          </div>
+          <div class="positions_to_apply_for">
+            <div>Events Coordinator</div>
           </div>
         </div>
       </div>
@@ -135,5 +149,19 @@
       <div class="rights">© All rights reserved , 2021</div>
     </footer>
     <script src="home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      const Btns = $(".oportunity");
+      const content = $(".positions_to_apply_for ");
+
+      for (let i = 0; i <= Btns.length; i++) {
+        Btns.eq(i).on("click", () => {
+          content.removeClass("active");
+          Btns.removeClass("active");
+          content.eq(i).addClass("active");
+          Btns.eq(i).addClass("active");
+        });
+      }
+    </script>
   </body>
 </html>
