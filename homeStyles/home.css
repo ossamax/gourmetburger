@@ -549,11 +549,10 @@ button {
 }
 
 .menu .wrapper .menu_header p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "lato", sans-serif;
   line-height: 1.5;
   margin: 2rem 0;
-  font-weight: 100;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 500px) {
@@ -649,9 +648,9 @@ button {
 
 .menu .wrapper .meal_description P {
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "lato", sans-serif;
   line-height: 1.8;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 1rem;
 }
 
@@ -810,8 +809,7 @@ button {
   margin: 1.5rem 0;
   font-size: 1rem;
   line-height: 1.5;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100;
+  font-family: "lato", sans-serif;
 }
 
 .ingredients .wrapper .ingredients_images {
