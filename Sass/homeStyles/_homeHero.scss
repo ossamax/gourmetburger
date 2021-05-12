@@ -15,11 +15,12 @@
       @media screen and (min-width: 920px) {
         width: 45%;
         text-align: left;
+        margin-top: 2rem;
       }
       h1 {
         font-family: "PT Serif", serif;
         @media screen and (min-width: 920px) {
-          font-size: 3rem;
+          font-size: 3.2rem;
         }
       }
       p {
@@ -35,6 +36,17 @@
         background-color: #ab8d69;
         color: white;
         margin-top: 1rem;
+        @media screen and (min-width: 900px) {
+          background: transparent;
+          color: white;
+          border: 1px solid white;
+          margin-top: 2rem;
+        }
+        &:hover {
+          background-color: #ab8d69;
+          color: white;
+          border-color: #ab8d69;
+        }
       }
     }
     .hero_burger {
@@ -116,7 +128,7 @@
           }
         }
         .meat {
-          bottom: 1.99rem;
+          bottom: 1.5rem;
           @media screen and (min-width: 920px) {
             bottom: 3.5rem;
           }

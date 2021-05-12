@@ -42,6 +42,7 @@
 @media screen and (min-width: 900px) {
   .about .wrapper .team {
     text-align: left;
+    margin: 8rem 0;
   }
 }
 
@@ -68,7 +69,6 @@
   height: 450px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 @media screen and (min-width: 900px) {
@@ -79,18 +79,12 @@
 }
 
 .about .wrapper .team .one {
-  background-image: url("../images/louis-hansel-v3OlBE6-fhU-unsplash.jpg");
+  background-image: url("../../images/louis-hansel-v3OlBE6-fhU-unsplash.jpg");
   background-position: center center;
 }
 
-@media screen and (min-width: 900px) {
-  .about .wrapper .team .one {
-    background-position: -7rem -77rem;
-  }
-}
-
 .about .wrapper .team .two {
-  background-image: url("../images/jesson-mata-I2Erl2cU_A4-unsplash.jpg");
+  background-image: url("../../images/jesson-mata-I2Erl2cU_A4-unsplash.jpg");
 }
 
 @media screen and (min-width: 900px) {
@@ -98,12 +92,11 @@
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    background-position: 29rem -4rem;
   }
 }
 
 .about .wrapper .team .tree {
-  background-image: url("../images/sebastian-coman-photography-eBmyH7oO5wY-unsplash.jpg");
+  background-image: url("../../images/sebastian-coman-photography-eBmyH7oO5wY-unsplash.jpg");
   background-position: center center;
 }
 

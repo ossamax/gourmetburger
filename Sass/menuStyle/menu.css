@@ -180,7 +180,7 @@
 
 .menu_section .wrapper .category_wrapper .highlights .highlight_image {
   height: 200px;
-  background-image: url("../images/highlights1-unsplash.jpg");
+  background-image: url("../../images/highlights1-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -199,15 +199,15 @@
 }
 
 .menu_section .wrapper .category_wrapper .highlights .main_img {
-  background-image: url("../images/highlights2-unsplash.jpg");
+  background-image: url("../../images/highlights2-unsplash.jpg");
 }
 
 .menu_section .wrapper .category_wrapper .highlights .steaks_img {
-  background-image: url("../images/highlights3-unsplash.jpg");
+  background-image: url("../../images/highlights3-unsplash.jpg");
 }
 
 .menu_section .wrapper .category_wrapper .highlights .sides_img {
-  background-image: url("../images/highlights4-unsplash.jpg");
+  background-image: url("../../images/highlights4-unsplash.jpg");
 }
 
 .menu_section .wrapper .category_wrapper .highlights .highlight_description {

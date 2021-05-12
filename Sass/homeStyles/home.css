@@ -232,6 +232,7 @@ button {
   .hero .wrapper .hero_content {
     width: 45%;
     text-align: left;
+    margin-top: 2rem;
   }
 }
 
@@ -241,7 +242,7 @@ button {
 
 @media screen and (min-width: 920px) {
   .hero .wrapper .hero_content h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -259,6 +260,21 @@ button {
   background-color: #ab8d69;
   color: white;
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+  .hero .wrapper .hero_content button {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    margin-top: 2rem;
+  }
+}
+
+.hero .wrapper .hero_content button:hover {
+  background-color: #ab8d69;
+  color: white;
+  border-color: #ab8d69;
 }
 
 .hero .wrapper .hero_burger {
@@ -378,7 +394,7 @@ button {
 }
 
 .hero .wrapper .hero_burger .burger_imgs .meat {
-  bottom: 1.99rem;
+  bottom: 1.5rem;
 }
 
 @media screen and (min-width: 920px) {
@@ -418,7 +434,7 @@ button {
 .about_us .wrapper .salt_img {
   width: 400px;
   height: 200px;
-  background-image: url("../images/scattered_salt.png");
+  background-image: url("../../images/scattered_salt.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -439,7 +455,7 @@ button {
   width: 95%;
   height: 230px;
   margin: auto;
-  background-image: url("../images/chef.jpg");
+  background-image: url("../../images/chef.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -675,10 +691,10 @@ button {
   }
 }
 
-.main_event .wrapper .salt_img {
+.main_event .wrapper .second {
   width: 400px;
   height: 200px;
-  background-image: url("../images/scattered_salt.png");
+  background-image: url("../../images/scattered_salt.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -690,7 +706,7 @@ button {
 }
 
 @media screen and (max-width: 520px) {
-  .main_event .wrapper .salt_img {
+  .main_event .wrapper .second {
     display: none;
   }
 }
@@ -699,7 +715,7 @@ button {
   width: 95%;
   height: 230px;
   margin: auto;
-  background-image: url("../images/events.jpg");
+  background-image: url("../../images/events.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -823,7 +839,6 @@ button {
     width: 70%;
     margin: auto;
     height: 300px;
-    padding: 7rem 0;
   }
 }
 
@@ -925,7 +940,7 @@ button {
 
 .footer_cta {
   height: 490px;
-  background-image: url("../images/meetings.jpg");
+  background-image: url("../../images/meetings.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

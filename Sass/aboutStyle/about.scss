@@ -31,6 +31,7 @@
       text-align: center;
       @media screen and (min-width: 900px) {
         text-align: left;
+        margin: 8rem 0;
       }
       .chef_wrapper {
         padding: 3rem 0;
@@ -45,28 +46,23 @@
         height: 450px;
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
         @media screen and (min-width: 900px) {
           width: 50%;
           height: 600px;
         }
       }
       .one {
-        background-image: url("../images/louis-hansel-v3OlBE6-fhU-unsplash.jpg");
+        background-image: url("../../images/louis-hansel-v3OlBE6-fhU-unsplash.jpg");
         background-position: center center;
-        @media screen and (min-width: 900px) {
-          background-position: -7rem -77rem;
-        }
       }
       .two {
-        background-image: url("../images/jesson-mata-I2Erl2cU_A4-unsplash.jpg");
+        background-image: url("../../images/jesson-mata-I2Erl2cU_A4-unsplash.jpg");
         @media screen and (min-width: 900px) {
           order: 2;
-          background-position: 29rem -4rem;
         }
       }
       .tree {
-        background-image: url("../images/sebastian-coman-photography-eBmyH7oO5wY-unsplash.jpg");
+        background-image: url("../../images/sebastian-coman-photography-eBmyH7oO5wY-unsplash.jpg");
         background-position: center center;
       }
       .chef {

@@ -68,3 +68,14 @@ gsap
     },
   })
   .to(".dessert", { rotateZ: 120 }, 0);
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".dessert",
+      start: "top top",
+      end: "top center",
+      scrub: true,
+    },
+  })
+  .to(".second", { yPercent: -30 }, 0);
