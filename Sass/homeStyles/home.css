@@ -1028,12 +1028,13 @@ footer .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 3rem 0;
+    padding: 4rem 0 2rem;
   }
 }
 
@@ -1051,6 +1052,15 @@ footer .wrapper .header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 500px) {
+  footer .wrapper .header {
+    padding: 0;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
 }
 
 footer .wrapper .header .footer_logo img {
@@ -1085,18 +1095,38 @@ footer .wrapper .openening_hours {
 @media screen and (min-width: 500px) {
   footer .wrapper .openening_hours {
     padding: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: left;
   }
 }
 
 footer .wrapper .openening_hours h4 {
   color: #ab8d69;
   font-family: "PT Serif", serif;
+  font-weight: normal;
 }
 
 footer .wrapper .openening_hours .days_hours_wrapper {
   font-family: "Lato", sans-serif;
   color: white;
   margin: 1.4rem 0;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 500px) {
+  footer .wrapper .openening_hours .days_hours_wrapper .flx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 footer .wrapper .openening_hours .days_hours_wrapper .days {
@@ -1107,24 +1137,72 @@ footer .wrapper .openening_hours .days_hours_wrapper .hours {
   margin-top: 0.4rem;
 }
 
-footer .wrapper .location {
+@media screen and (min-width: 500px) {
+  footer .wrapper .openening_hours .days_hours_wrapper .hours {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+
+footer .wrapper .locations {
   color: white;
-  font-family: "Lato", sans-serif;
   text-align: center;
 }
 
-footer .wrapper .location h4 {
-  color: #ab8d69;
-  font-family: "PT Serif", serif;
+@media screen and (min-width: 800px) {
+  footer .wrapper .locations {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+  }
 }
 
-footer .wrapper .location div {
-  margin: 1.2rem 0;
+footer .wrapper .locations h1 {
+  font-family: "PT Serif", serif;
+  color: #ab8d69;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 800px) {
+  footer .wrapper .locations .locations_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+footer .wrapper .locations .locations_wrapper .col {
+  margin: 1.5rem 0;
+}
+
+@media screen and (min-width: 800px) {
+  footer .wrapper .locations .locations_wrapper .col {
+    margin: 1rem 0;
+  }
+}
+
+footer .wrapper .locations .locations_wrapper .col div {
+  padding: 0.5rem 0;
+  font-family: Lato, sans-serif;
   font-size: 0.9rem;
 }
 
-footer .wrapper .location div P {
+footer .wrapper .locations .locations_wrapper .col .address p {
   padding: 0.3rem 0;
+}
+
+footer .wrapper .locations .locations_wrapper .col .city {
+  font-size: 1rem;
+}
+
+footer .wrapper .locations .locations_wrapper .col .email {
+  color: white;
 }
 
 footer .rights {

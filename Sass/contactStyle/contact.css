@@ -1,1 +1,166 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+@media screen and (min-width: 800px) {
+  .form .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2rem 0;
+  }
+}
+
+.form .wrapper .form_locations {
+  color: white;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 800px) {
+  .form .wrapper .form_locations {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+    padding-top: 4rem;
+  }
+}
+
+.form .wrapper .form_locations h1 {
+  font-family: "PT Serif", serif;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .form .wrapper .form_locations h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .form .wrapper .form_locations .locations_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.form .wrapper .form_locations .locations_wrapper .col {
+  margin: 1.5rem 0;
+}
+
+.form .wrapper .form_locations .locations_wrapper .col div {
+  padding: 0.5rem 0;
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+}
+
+.form .wrapper .form_locations .locations_wrapper .col .city {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.form .wrapper .form_locations .locations_wrapper .col .address p {
+  padding: 0.3rem 0;
+}
+
+.form .wrapper .form_locations .locations_wrapper .col .email {
+  color: white;
+}
+
+.form .wrapper form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 0;
+}
+
+@media screen and (min-width: 800px) {
+  .form .wrapper form {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 45%;
+    padding-top: 5rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.form .wrapper form h1 {
+  font-size: 2rem;
+  font-family: "PT Serif", serif;
+  color: white;
+}
+
+.form .wrapper form input,
+.form .wrapper form textarea {
+  width: 100%;
+  padding: 0.5rem 0rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0.8rem 0;
+  outline: none;
+}
+
+.form .wrapper form input::-webkit-input-placeholder,
+.form .wrapper form textarea::-webkit-input-placeholder {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.form .wrapper form input:-ms-input-placeholder,
+.form .wrapper form textarea:-ms-input-placeholder {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.form .wrapper form input::-ms-input-placeholder,
+.form .wrapper form textarea::-ms-input-placeholder {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.form .wrapper form input::placeholder,
+.form .wrapper form textarea::placeholder {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.form .wrapper form button {
+  padding: 0.8rem 2rem;
+  background-color: #ab8d69;
+  color: white;
+  font-family: "PT Serif", serif;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .form .wrapper form button {
+    background-color: transparent;
+    border: 1px solid white;
+  }
+  .form .wrapper form button:hover {
+    background-color: #ab8d69;
+    border-color: #ab8d69;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
