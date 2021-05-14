@@ -118,6 +118,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0.8rem 0;
   outline: none;
+  resize: none;
 }
 
 .form .wrapper form input::-webkit-input-placeholder,
